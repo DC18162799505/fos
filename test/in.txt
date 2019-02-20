@@ -1,0 +1,27 @@
+00000000  55                push ebp
+00000001  89E5              mov ebp,esp
+00000003  83EC08            sub esp,byte +0x8
+00000006  83E4F0            and esp,byte -0x10
+00000009  B800000000        mov eax,0x0
+0000000E  29C4              sub esp,eax
+00000010  EBFE              jmp short 0x10
+00000012  90                nop
+00000013  90                nop
+00000014  90                nop
+00000015  90                nop
+00000016  90                nop
+00000017  90                nop
+00000018  90                nop
+00000019  90                nop
+0000001A  90                nop
+0000001B  90                nop
+0000001C  90                nop
+0000001D  90                nop
+0000001E  90                nop
+0000001F  90                nop
+00000020  B800000000        mov eax,0x0
+00000025  BA00000000        mov edx,0x0
+0000002A  8B5C2404          mov ebx,[esp+0x4]
+0000002E  8B4C2408          mov ecx,[esp+0x8]
+00000032  CD80              int 0x80
+00000034  C3                ret

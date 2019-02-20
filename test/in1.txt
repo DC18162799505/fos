@@ -1,0 +1,9 @@
+00000000  55                push ebp
+00000001  89E5              mov ebp,esp
+00000003  83EC08            sub esp,byte +0x8
+00000006  83E4F0            and esp,byte -0x10
+00000009  B800000000        mov eax,0x0
+0000000E  29C4              sub esp,eax
+00000010  B800000000        mov eax,0x0
+00000015  C9                leave
+00000016  C3                ret
